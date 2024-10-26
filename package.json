@@ -6,15 +6,37 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint *.{vue,js,ts}",
+    "lint:fix": "eslint *.{vue,js,ts} --write",
+    "format": "prettier *.{html,css,js,ts,vue}",
+    "format:write": "prettier src/**/*.{html,css,js,ts,vue} --write",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.1.1",
+    "@fontsource-variable/noto-serif": "^5.1.0",
+    "@fontsource-variable/roboto-flex": "^5.1.0",
+    "@fontsource/lobster": "^5.1.0",
+    "autoprefixer": "^10.4.20",
+    "motion": "^10.18.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
     "vue": "^3.5.12"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
+    "eslint": "^9.13.0",
+    "eslint-plugin-vue": "^9.29.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "sass": "^1.80.4",
     "typescript": "~5.6.2",
+    "typescript-eslint": "^8.11.0",
     "vite": "^5.4.9",
     "vue-tsc": "^2.1.6"
-  }
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
 }

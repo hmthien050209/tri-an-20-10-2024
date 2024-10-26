@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  @apply flex min-h-screen max-w-[100vw] flex-col overflow-y-auto overflow-x-clip scroll-smooth;
+}
+
+.snap-container {
+  @apply snap-y snap-mandatory snap-always;
+}
+
+.snap-component {
+  @apply snap-center;
+}
+
+.page {
+  @extend .snap-component;
+  @apply h-screen w-screen;
+}
+
+h6 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-5xl;
+}
+
+h1 {
+  @apply text-6xl;
+}
+
+p {
+  @apply text-base;
+}
