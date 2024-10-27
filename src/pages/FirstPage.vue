@@ -6,7 +6,7 @@
   import tailwindColors from 'tailwindcss/colors'
 
   const pageTimeline: TimelineDefinition = [
-    ['.heart#_1 path', drawSvgPath(1), { duration: 0.6 }],
+    ['.heart#_1 path', drawSvgPath(1), { duration: 0.6, delay: 0.5 }],
     ['.heart#_2 path', drawSvgPath(1), { duration: 0.6 }],
     ['.heart#_3 path', drawSvgPath(1), { duration: 0.6 }],
     [
@@ -28,6 +28,13 @@
   ]
 
   onMounted(() => {
+    // Full screen request
+    const root = document.documentElement,
+      req = root.requestFullscreen
+    if (typeof req !== 'undefined' && req) {
+      req.call(root)
+    }
+
     timeline(pageTimeline)
   })
 </script>
@@ -55,11 +62,11 @@
           v-html="heart"
         ></svg>
       </div>
-      <h1 id="title">
+      <h4 id="title">
         Chúc mừng ngày phụ nữ Việt Nam
         <br />
         20/11
-      </h1>
+      </h4>
     </div>
   </div>
 </template>
@@ -83,22 +90,6 @@
 
   .heart#_3 {
     @apply h-[18rem] w-[18rem];
-  }
-
-  .heart {
-    @apply absolute overflow-visible;
-  }
-
-  svg {
-    @apply overflow-visible;
-  }
-
-  .heart path {
-    stroke-dashoffset: 1;
-    stroke-dasharray: 1;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    @apply invisible fixed bottom-0 left-0 right-0 top-0 fill-none stroke-[1.5rem];
   }
 
   .heart#_1 path {

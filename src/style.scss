@@ -3,46 +3,57 @@
 @tailwind utilities;
 
 .main-container {
-  @apply flex min-h-screen max-w-[100vw] flex-col overflow-y-auto overflow-x-clip scroll-smooth;
-}
-
-.snap-container {
-  @apply snap-y snap-mandatory snap-always;
-}
-
-.snap-component {
-  @apply snap-center;
+  @apply flex min-h-screen w-screen flex-col overflow-y-scroll overflow-x-clip scroll-smooth;
 }
 
 .page {
-  @extend .snap-component;
   @apply h-screen w-screen;
 }
 
 h6 {
-  @apply text-xl;
-}
-
-h5 {
-  @apply text-2xl;
-}
-
-h4 {
-  @apply text-3xl;
-}
-
-h3 {
   @apply text-4xl;
 }
 
-h2 {
+h5 {
   @apply text-5xl;
 }
 
-h1 {
+h4 {
   @apply text-6xl;
 }
 
+h3 {
+  @apply text-7xl;
+}
+
+h2 {
+  @apply text-8xl;
+}
+
+h1 {
+  @apply text-9xl;
+}
+
 p {
-  @apply text-base;
+  @apply text-4xl;
+}
+
+.heart {
+  @apply absolute overflow-visible;
+}
+
+svg {
+  @apply overflow-visible;
+}
+
+.heart path {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  @apply invisible fixed bottom-0 left-0 right-0 top-0 fill-none stroke-[1.5rem];
+}
+
+html * {
+  @apply leading-relaxed;
 }
