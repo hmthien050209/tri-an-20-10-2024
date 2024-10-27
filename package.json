@@ -11,6 +11,7 @@
     "lint:fix": "eslint *.{vue,js,ts} --fix",
     "format": "prettier *.{html,css,js,ts,vue}",
     "format:write": "prettier src/**/*.{html,css,js,ts,vue} --write",
+    "serve": "serve dist/",
     "prepare": "husky"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "autoprefixer": "^10.4.20",
     "motion": "^10.18.0",
     "postcss": "^8.4.47",
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.14",
     "vue": "^3.5.12"
   },

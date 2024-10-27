@@ -24,7 +24,8 @@ pnpm dev
 pnpm build
 
 # Serving
-pnpm serve dist/
+# Will serve dist/ folder
+pnpm serve
 
 # Linting
 pnpm lint
