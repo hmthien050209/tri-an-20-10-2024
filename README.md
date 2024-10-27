@@ -1,6 +1,6 @@
 # tri-an-20-10-2024
 
-This is a project for celebrating Vietnamese women day (November 20th, 2024), designed for use in my 2024 - 2027 interdisciplinary informatics class at VNU-HCM High School for the Gifted (Tin-LN 2427 PTNK).
+This is a project for celebrating Vietnamese women day (October 20th, 2024), designed for use in my 2024 - 2027 interdisciplinary informatics class at VNU-HCM High School for the Gifted (Tin-LN 2427 PTNK).
 Developed using [Vue.js](https://vuejs.org), [TailwindCSS](https://tailwindcss.com), and icons from [Font Awesome](https://fontawesome.com).
 
 Fonts provided by [Google Fonts](https://fonts.google.com) via [Fontsource](https://fontsource.org).
