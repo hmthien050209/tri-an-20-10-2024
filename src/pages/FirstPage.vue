@@ -65,7 +65,7 @@
       <h4 id="title">
         Chúc mừng ngày phụ nữ Việt Nam
         <br />
-        20/11
+        20/10
       </h4>
     </div>
   </div>

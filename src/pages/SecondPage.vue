@@ -56,7 +56,7 @@
       <div class="texts flex h-full flex-col font-serif">
         <h3>Chào các bạn nữ lớp 10 Tin-LN thân mến!</h3>
         <p>
-          Lớp chúng mình tổ chức mừng ngày 20/11 hơi muộn nhỉ? Tụi con trai
+          Lớp chúng mình tổ chức mừng ngày 20/10 hơi muộn nhỉ? Tụi con trai
           chúng mình cảm ơn hai bạn Hà và Diệp đã luôn luôn trách nhiệm, luôn
           luôn hết mình vì lớp mình.
           <br />
